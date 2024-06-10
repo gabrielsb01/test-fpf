@@ -25,7 +25,6 @@ const PersonFormModal: React.FC<ModalProps> = ({ closeModal, isMobile }) => {
   const addPerson = usePersonStore((state) => state.addPerson);
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data)
     const formData = {
       ...data,
       foto: data.foto[0]
